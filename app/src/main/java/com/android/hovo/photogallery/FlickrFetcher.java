@@ -101,6 +101,7 @@ public class FlickrFetcher {
 
             GalleryItem item = new GalleryItem();
             item.setId(photo.getString("id"));
+            item.setOwner(photo.getString("owner"));
             item.setCaption(photo.getString("title"));
 
             if(!photo.has("url_s")){
